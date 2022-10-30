@@ -1,0 +1,30 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://mirrors.bfsu.edu.cn/git/CocoaPods/Specs.git'
+#source 'http://git.dev.rooidea.com/saasapp-ios-component/coinbull.git'
+platform :ios, '12.0'
+#消除Pods警告
+inhibit_all_warnings!
+use_frameworks!
+#use_modular_headers!
+
+targets = ['AllStars']
+
+targets.each do |t|
+  target t do
+    pod 'web3.swift.pod'
+    pod 'Alamofire','~> 4.8.2'
+    pod 'AFNetworking'
+    pod 'FMDB'
+    pod 'Secp256k1_A' ,'0.1.2'
+    pod 'SocketRocket'
+    pod 'SDWebImage'
+    pod 'SnapKit'
+    pod 'HandyJSON'
+    pod 'SVProgressHUD'
+    pod 'MJExtension'
+    pod 'Kingfisher'
+#    pod 'WebViewJavascriptBridge'
+    pod 'Flurry-iOS-SDK/FlurrySDK'
+    pod 'Flurry-iOS-SDK/FlurryAds'
+  end
+end

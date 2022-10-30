@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  AllStars
+//
+//  Created by Mac on 2021/10/9.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//#import "Header.h"//所有的全局引用都在这个头中
+
+//全局宏
+#import "URLMacros.h"
+#import "CommonMacros.h"
+#import "UserInfoModel.h"
+#import "UserInfoConfig.h"
+
+//基础类
+#import "AppDelegate.h"
+#import "RootViewController.h"
+#import "RootNavigationController.h"
+#import "Tool.h"
+#import "UIView+Frame.h"
+#import "UIView+Alert.h"
+#import "NSBundle+Language.h"
+#import "UIButton+SGPagingView.h"
+#import "UIColor+GradientLayer.h"
+#import "ThirdParty/YYCache/YYCache.h"
+#import "ThirdParty/YYModel/YYModel.h"
+#import "ThirdParty/Masonry/Masonry/Masonry.h"
+#import "ThirdParty/MBProgressHUD/MBProgressHUD.h"
+#import "ThirdParty/MJRefresh/MJRefresh/MJRefresh.h"
+#import "ThirdParty/SDCycleScrollView/SDCycleScrollView.h"
+#import "CSNetworkTool.h"
+#import "ThirdParty/Masonry/Masonry/Masonry.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "AFNetworking/AFNetworking.h"
+#import <MJExtension/MJExtension.h>
+#import "AllStars-Swift.h"
+#endif
+
+
+#endif /* PrefixHeader_pch */

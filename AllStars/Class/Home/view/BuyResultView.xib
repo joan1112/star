@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.94999999999999996" contentMode="scaleToFill" id="ods-5T-72S" customClass="BuyResultView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fE5-aB-T5D">
+                    <rect key="frame" x="15" y="114" width="384" height="470"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="恭喜您获得" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-JC-w4R">
+                            <rect key="frame" x="139" y="46" width="107" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.8862745098" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20392156862745098" green="0.11372549019607843" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="470" id="WZU-Yw-koi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tZ-uH-9Gd">
+                    <rect key="frame" x="15" y="599" width="164" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="164" id="DqU-vO-dNL"/>
+                        <constraint firstAttribute="height" constant="65" id="oec-LH-sfZ"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWP-ec-a2a">
+                    <rect key="frame" x="235" y="599" width="164" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="164" id="14b-CG-lMK"/>
+                        <constraint firstAttribute="height" constant="65" id="E2T-O1-X73"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Fko-YD-oP4"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fE5-aB-T5D" firstAttribute="leading" secondItem="Fko-YD-oP4" secondAttribute="leading" constant="15" id="3W6-bE-7KV"/>
+                <constraint firstItem="2tZ-uH-9Gd" firstAttribute="top" secondItem="fE5-aB-T5D" secondAttribute="bottom" constant="15" id="9Nh-sF-eg3"/>
+                <constraint firstItem="fE5-aB-T5D" firstAttribute="top" secondItem="Fko-YD-oP4" secondAttribute="top" constant="70" id="OfY-zf-ecD"/>
+                <constraint firstItem="JWP-ec-a2a" firstAttribute="top" secondItem="fE5-aB-T5D" secondAttribute="bottom" constant="15" id="Ss5-64-KhN"/>
+                <constraint firstItem="Fko-YD-oP4" firstAttribute="trailing" secondItem="JWP-ec-a2a" secondAttribute="trailing" constant="15" id="hsk-Hu-7Gk"/>
+                <constraint firstItem="2tZ-uH-9Gd" firstAttribute="leading" secondItem="Fko-YD-oP4" secondAttribute="leading" constant="15" id="qg7-yv-vUh"/>
+                <constraint firstItem="Fko-YD-oP4" firstAttribute="trailing" secondItem="fE5-aB-T5D" secondAttribute="trailing" constant="15" id="xZS-bp-pKr"/>
+            </constraints>
+            <connections>
+                <outlet property="againBtn" destination="JWP-ec-a2a" id="5uf-8d-duG"/>
+                <outlet property="bgView" destination="fE5-aB-T5D" id="yLt-CJ-zvO"/>
+                <outlet property="receiveBtn" destination="2tZ-uH-9Gd" id="Hh7-0Y-dtm"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="85.714285714285708"/>
+        </view>
+    </objects>
+</document>
